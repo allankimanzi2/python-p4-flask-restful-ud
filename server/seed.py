@@ -8,7 +8,7 @@ from models import db, Newsletter
 
 with app.app_context():
     
-    fake = Faker()
+    fake =  Faker()
 
     Newsletter.query.delete()
 

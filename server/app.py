@@ -39,7 +39,7 @@ class Newsletters(Resource):
 
         response_dict_list = [n.to_dict() for n in Newsletter.query.all()]
 
-        response = make_response(
+        response =  make_response(
             jsonify(response_dict_list),
             200,
         )
